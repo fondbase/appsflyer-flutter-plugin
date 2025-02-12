@@ -422,6 +422,7 @@ static BOOL _isSKADEnabled = false;
     NSString* referrerImageUrl = call.arguments[@"referrerImageUrl"];
     NSString* brandDomain = call.arguments[@"brandDomain"];
     NSString* baseDeeplink = call.arguments[@"baseDeeplink"];
+    NSString* deeplinkPath = call.arguments[@"deeplinkPath"];
     NSString* referrerName = call.arguments[@"referrerName"];
     NSString* channel = call.arguments[@"channel"];
     NSString* campaign = call.arguments[@"campaign"];
@@ -439,6 +440,9 @@ static BOOL _isSKADEnabled = false;
     }
     if (baseDeeplink == [NSNull null]) {
         baseDeeplink = nil;
+    }
+    if (deeplinkPath == [NSNull null]) {
+        deeplinkPath = nil;
     }
     if (referrerName == [NSNull null]) {
         referrerName = nil;
@@ -458,6 +462,7 @@ static BOOL _isSKADEnabled = false;
         [generator setCampaign:campaign];
         [generator setBrandDomain:brandDomain];
         [generator setBaseDeeplink:baseDeeplink];
+        [generator setDeeplinkPath:deeplinkPath];
         [generator setReferrerName:referrerName];
         [generator setReferrerImageURL:referrerImageUrl];
         [generator setReferrerCustomerId:customerID];

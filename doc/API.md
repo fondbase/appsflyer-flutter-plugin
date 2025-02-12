@@ -612,6 +612,7 @@ class AppsFlyerInviteLinkParams {
   final String referreImageUrl;
   final String customerID;
   final String baseDeepLink;
+  final String deeplinkPath;
   final String brandDomain;
 }
 ```
@@ -632,6 +633,7 @@ AppsFlyerInviteLinkParams inviteLinkParams = new AppsFlyerInviteLinkParams(
       channel: "",
       referrerName: "",
       baseDeepLink: "",
+      deeplinkPath: "",
       brandDomain: "",
       customerID: "",
       referreImageUrl: "",

@@ -628,6 +628,7 @@ public class AppsflyerSdkPlugin implements MethodCallHandler, FlutterPlugin, Act
         String referrerName = (String) call.argument("referrerName");
         String referrerImageUrl = (String) call.argument("referrerImageUrl");
         String baseDeepLink = (String) call.argument("baseDeeplink");
+        String deeplinkPath = (String) call.argument("deeplinkPath");
         String brandDomain = (String) call.argument("brandDomain");
         Map<String, String> customParams = (Map<String, String>) call.argument("customParams");
 
@@ -650,6 +651,9 @@ public class AppsflyerSdkPlugin implements MethodCallHandler, FlutterPlugin, Act
         }
         if (baseDeepLink != null && !baseDeepLink.equals("")) {
             linkGenerator.setBaseDeeplink(baseDeepLink);
+        }
+        if (deeplinkPath != null && !deeplinkPath.equals("")) {
+            linkGenerator.setDeeplinkPath(deeplinkPath);
         }
         if (brandDomain != null && !brandDomain.equals("")) {
             linkGenerator.setBrandDomain(brandDomain);

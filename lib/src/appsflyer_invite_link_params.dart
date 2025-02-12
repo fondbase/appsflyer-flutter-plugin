@@ -8,6 +8,7 @@ class AppsFlyerInviteLinkParams {
   final String? referreImageUrl;
   final String? customerID;
   final String? baseDeepLink;
+  final String? deeplinkPath;
   final String? brandDomain;
   final Map<String?, String?>? customParams;
 
@@ -19,6 +20,7 @@ class AppsFlyerInviteLinkParams {
     this.channel,
     this.referrerName,
     this.baseDeepLink,
+    this.deeplinkPath,
     this.brandDomain,
     this.customerID,
     this.referreImageUrl,

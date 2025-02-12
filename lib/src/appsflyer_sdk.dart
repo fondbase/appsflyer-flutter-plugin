@@ -456,6 +456,7 @@ class AppsflyerSdk {
     inviteLinkParamsMap['customerID'] = params.customerID;
     inviteLinkParamsMap['brandDomain'] = params.brandDomain;
     inviteLinkParamsMap['baseDeeplink'] = params.baseDeepLink;
+    inviteLinkParamsMap['deeplinkPath'] = params.deeplinkPath;
     inviteLinkParamsMap['referrerName'] = params.referrerName;
     inviteLinkParamsMap['channel'] = params.channel;
     inviteLinkParamsMap['campaign'] = params.campaign;
